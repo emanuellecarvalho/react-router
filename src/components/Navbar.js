@@ -10,7 +10,12 @@ const Navbar = () => {
       {/* O Link atualiza o component sem fazer o reload da página, o que é esperado de uma SPA
       <Link to="/">Home</Link>
       <Link to="/about">Sobre</Link> */}
-      <NavLink to="/">Home</NavLink>
+      <NavLink
+        to="/"
+        // className={({ isActive }) => (isActive ? "esta-ativo" : "nao-ativo")}
+      >
+        Home
+      </NavLink>
       <NavLink to="/about">Sobre</NavLink>
     </nav>
   );
